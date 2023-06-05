@@ -145,6 +145,49 @@ section{
 }
 
 
+.swiper-pagination-bullet{
+    background-color: var(--sub-color);
+}
+
+.availability form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.availability form .flex .box{
+    flex: 1 1 20rem;
+}
+   
+.availability form .flex .box p{
+    font-size: 1.8rem;
+    color: var(--sub-color);
+    
+}
+.availability form .flex .box .input{
+    width: 100%;
+    padding: 1rem 0; 
+    font-size: 1.8rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-bottom: var(--border);
+    margin: 1rem 0;
+}
+
+.availability form .flex .box .input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+
+.availability form .btn{
+    background-color: transparent;
+}
+
+.availability form .btn:hover{
+    border-radius: 1rem;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
+
 
 
 
@@ -195,6 +238,10 @@ section{
         display: flex;
         
     }
+
+    .home .box img{
+        height: 50vh;
+    }
 }
 
 @media(max-width:450px){
@@ -204,5 +251,9 @@ section{
 
     .header .flex .logo{
         font-size: 2rem;
+    }
+
+    .home .box img{
+        height: 25rem;
     }
 }

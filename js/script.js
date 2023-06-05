@@ -9,6 +9,7 @@ window.onscroll = () =>{
 
 var swiper = new Swiper(".home-slider", {
     loop: true,
+    
     effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
@@ -18,10 +19,12 @@ var swiper = new Swiper(".home-slider", {
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
+        speed: 400,
+        spaceBetween: 100,
       },
     pagination: {
       el: ".swiper-pagination",
-      dynamicBullets: true,
+      
     },
   });

@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Booking Website</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -63,6 +61,59 @@
         </div>
     </section>
 
+    <!-- Avalibility section starts -->
+    <section class="availability" id="availability">
+       <form action="" method="post">
+        <div class="flex">
+            <div class="box">
+                <p>check in <span>*</span></p>
+                <input type="date" name="check_in" class="input" required>
+            </div>
+            <div class="box">
+                <p>check out<span>*</span></p>
+                <input type="date" name="check_out" class="input" required>
+            </div>
+            <div class="box">
+                <p>adult<span>*</span></p>
+                <select name="adult" class="input" required>
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adult</option>
+                </select>
+                
+            </div>
+
+            <div class="box">
+                <p>child<span>*</span></p>
+                <select name="adult" class="input" required>
+                    <option value="_">0 child</option>
+                    <option value="1">1 child</option>
+                    <option value="2">2 child </option>
+                </select>
+                
+            </div>
+
+            <div class="box">
+                <p>rooms<span>*</span></p>
+                <select name="adult" class="input" required>
+                    
+                    <option value="1">1 room</option>
+                    <option value="2">2 room </option>
+                    <option value="3">3 room</option>
+                </select>
+                
+            </div>
+            
+
+        </div>
+        <input type="submit" value="check availability" name="check" class="btn" id="">
+       </form>
+    </section>
+
+    <!-- Avalibility section ends -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>
