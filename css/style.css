@@ -146,6 +146,7 @@ section{
 
 
 .swiper-pagination-bullet{
+    padding: auto;
     background-color: var(--sub-color);
 }
 
@@ -188,15 +189,123 @@ section{
     color: var(--main-color);
 }
 
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 30rem;
+    border-radius: .5rem;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--sub-color);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--sub-color);
+}
+
+.about .row.revers{
+    flex-flow: row-reverse;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem,1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.services .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--sub-color);
+}
+
+.services .box-container .box:hover{
+    background-color: var(--main-color);
+}
+
+.services .box-container .box img{
+    height: 7rem;
+    margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+    margin: 2rem 0;
+}
+
+.services .box-container .box p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.reservation form{
+    border: var(--border);
+    padding: 2rem;
+}
+
+.reservation form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.reservation form h3{
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.reservation form .flex .box{
+    flex: 1 1 40rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.reservation form .flex .box .input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
 
 
 
 
 
-
-
-
-
+ 
 
 
 
@@ -256,4 +365,9 @@ section{
     .home .box img{
         height: 25rem;
     }
+
+    .about .row .image img{
+        width: 100%;
+    }
+    
 }
