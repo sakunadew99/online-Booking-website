@@ -111,3 +111,41 @@ section{
     background-color: var(--main-color);
     color: var(--sub-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    .header .flex
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
