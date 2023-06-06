@@ -7,6 +7,12 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
+document.querySelectorAll('.contact .row .faq .box h3').forEach(faqBox =>{
+  faqBox.onclick = () =>{
+    faqBox.parentElement.classList.toggle('active');
+  }
+})
+
 var swiper = new Swiper(".home-slider", {
     loop: true,
     
@@ -47,5 +53,25 @@ var swiper = new Swiper(".home-slider", {
       pagination: {
         el: ".swiper-pagination",
         
+      },
+  });
+
+
+  var swiper = new Swiper(".review-slider", {
+    loop: true,
+    slidesPerView: "auto",
+    grabCursor: true,  
+    spaceBetween: 30,   
+      pagination: {
+        el: ".swiper-pagination",
+        
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        991: {
+          slidesPerView: 2,
+        },
       },
   });
